@@ -1,0 +1,21 @@
+{
+    "name": "shrew/mazzy-skeleton",
+    "description": "Mazzy's Boilerplate for a quick start projects",
+    "version": "0.0.1-dev",
+    "repositories": [
+        { "type": "composer", "url": "http://localhost/satis"}
+    ],
+    "require": {
+    	"php": ">=5.5.0",
+        "shrew/mazzy": "0.4.*@dev",
+        "monolog/monolog": "1.9.*@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Shrew\\App\\": "src/",
+            "Shrew\\App\\": "tests/"
+        },
+        "classmap": ["app/"]
+    }
+}
